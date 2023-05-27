@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Dawn4rest</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>TEST</h1>
+  <header>
+    <div class="container">
+      <a href="#" class="logo_menu">
+        <div class="logo logo_header">logo</div>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li class=""><a href="#">menu0</a></li>
+          <li class=""><a href="#">menu1</a></li>
+          <li class=""><a href="#">menu2</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="swiper mySwiper swiper-container">
+    <div class="swiper-wrapper bg">
+      <section class="mainfullbox0 swiper-slide"></section>
+      <section class="mainfullbox1 swiper-slide mainbotBk"></section>
+      <section class="mainfullbox_Last swiper-slide"></section>
+    </div>
+    <div class="swiper-pagination mainfull_navi"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
