@@ -13,26 +13,25 @@
 
 <body>
   <header>
-    <div class="container">
-      <a href="#" class="logo_menu">
-        <div class="logo logo_header">logo</div>
-      </a>
-      <nav>
-        <ul class="menu">
-          <li class=""><a href="#">menu0</a></li>
-          <li class=""><a href="#">menu1</a></li>
-          <li class=""><a href="#">menu2</a></li>
-        </ul>
-      </nav>
+    <div class="container flex">
+      <a class="logo" href="#">logo</a>
+
+      <ul class="flex">
+        <li><a href="#menu-1">menu 1</a></li>
+        <li><a href="#menu-2">menu 2</a></li>
+        <li><a href="#menu-3">menu 3</a></li>
+      </ul>
     </div>
   </header>
+
   <div class="swiper mySwiper swiper-container">
     <div class="swiper-wrapper bg">
-      <section class="mainfullbox0 swiper-slide"></section>
-      <section class="mainfullbox1 swiper-slide mainbotBk"></section>
-      <section class="mainfullbox_Last swiper-slide"></section>
+      <section id="index" class="swiper-slide"></section>
+      <section id="menu-1" class="swiper-slide"></section>
+      <section id="menu-2" class="swiper-slide"></section>
+      <section id="menu-3" class="swiper-slide"></section>
     </div>
-    <div class="swiper-pagination mainfull_navi"></div>
+    <div class="swiper-pagination aside-nav"></div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
