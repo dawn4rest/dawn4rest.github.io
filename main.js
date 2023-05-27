@@ -1,9 +1,9 @@
 $(function(){
-  var mySwiper = undefined;
+  var swiper = undefined;
 
   function initSwiper() {
-    if ($(window).width() >= 640 && mySwiper == undefined) {
-      mySwiper = new Swiper(".swiper-container", {
+    if ($(window).width() >= 640 && swiper == undefined) {
+      swiper = new Swiper('.swiper-container', {
         speed: 500,
         direction: 'vertical',
         mousewheel: true,
@@ -15,8 +15,8 @@ $(function(){
         on: {
           slideChange: function() {
             setTimeout(function () {
-              mySwiper.params.touchReleaseOnEdges = false;  
-              mySwiper.params.mousewheel.releaseOnEdges = false;
+              swiper.params.touchReleaseOnEdges = false;  
+              swiper.params.mousewheel.releaseOnEdges = false;
             });
           },
         }
