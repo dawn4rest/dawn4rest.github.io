@@ -55,6 +55,7 @@ html,
 body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: 16px;
+  line-height: 1.5rem;
   letter-spacing: 0.04rem;
   width: 100%;
   height: 100%;
@@ -63,6 +64,9 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+img {
+  width: 100%;
 }
 
 .container {
@@ -137,28 +141,27 @@ header ul li {
 
 
 /* Root Styles */
-#index .article-header {
+#root .article-header {
   margin: 10rem 0 16rem;
   color:	#004E4A;
 }
-#index h1 {
+#root h1 {
   margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: 600;
 }
-#index h2 {
+#root h2 {
   font-size: 1.25rem;
   font-weight: 300;
 }
-#index h6 {
+#root .root-name {
   margin-bottom: 2.5rem;
   font-size: 1.25rem;
-  line-height: 1.5rem;
   letter-spacing: 0.15rem;
   font-weight: 300;
   color: #999;
 }
-#index .publish-date {
+#root .publish-date {
   font-size: 1.5rem;
   font-weight: 300;
   color: #666;
@@ -166,10 +169,10 @@ header ul li {
 
 
 /* Project Index Styles */
-.project-index article {
+.page-index article {
   padding: 12rem 8rem;
 }
-.project-index .article-title {
+.page-index .article-title {
   display: inline-block;
   margin-bottom: 0.75rem;
   font-size: 1.5rem;
@@ -178,15 +181,86 @@ header ul li {
   color: #eee;
   background-color: #004E4A;
 }
-.project-index .article-date {
+.page-index .article-date {
   font-size: 1.25rem;
   color: #004E4A;
 }
-.project-index .project-list {
+.page-index .project-list {
   margin-top: 5rem;
 }
-.project-index .project-list li {
+.page-index .project-list li {
   margin-bottom: 2.5rem;
   font-size: 2rem;
   font-weight: 500;
+}
+
+
+/* Page Project Outline Styles */
+.page-outline article {
+  padding: 8rem 4rem;
+}
+.page-outline .article-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.page-outline .outline-list {
+  margin-top: 8rem;
+  font-weight: 300;
+}
+.page-outline .outline-list li {
+  display: flex;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+.page-outline .outline-list li p {
+  margin-right: 0.5rem;
+}
+
+
+/* Page Project Details Styles */
+.page-details article {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0rem;
+}
+.page-details .article-subtitle {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #004E4A;
+}
+.page-details .article-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.page-details .article-body {
+  align-items: flex-start;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  height: 100%;
+}
+.page-details .left-wrap,
+.page-details .right-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+.page-details .content-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.page-details .content-panel {
+  padding: 1.25rem 2rem;
+  height: 100%;
+  background-color: #e9e9e9;
+}
+
+.page-details p {
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  word-break: keep-all;
 }
