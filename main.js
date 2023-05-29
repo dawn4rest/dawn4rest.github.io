@@ -7,10 +7,6 @@ $(function(){
         speed: 500,
         direction: 'vertical',
         mousewheel: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
         watchOverflow : true,
         on: {
           slideChange: function() {
