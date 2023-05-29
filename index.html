@@ -54,10 +54,10 @@
           <ul class="article-body project-list">
             <li>01 CMS 시스템 이전 지원(프론트엔드)</li>
             <li>02 인터렉티브 웹페이지 제작</li>
-            <li>03 선거, 100주년 등 특집페이지 제작</li>
           </ul>
         </article>
       </section>
+
       <section class="swiper-slide page-outline">
         <article>
           <div class="article-header">
@@ -124,7 +124,7 @@
             <div class="left-wrap">
               <h1 class="content-title">조선닷컴 리소스 최적화, 광고 컴포넌트 수정</h1>
               <div class="content-panel">
-                <p>GIF 이슈로 index page 리스소 400~600MB, 업로드 용량 제한 후에도 80MB 수준으로 과다한 AWS 비용 문제 발생</p>
+                <p>GIF 이슈로 index page 리스소 400~600MB, 업로드 용량 제한 후에도 70MB 수준으로 과다한 AWS 비용 문제 발생</p>
                 <p>Lazyload 도입 및 백엔드 개발자분과 SSR에서 index.html, script 최적화 작업 진행(기여도 40%)</p>
                 <p>이미지 업로드 시 동작하는 resizer 수정하여 최초 load 부하 감소, 사용하지 않는 비율 제거</p>
                 <p>html head 영역 meta 태그 커스터마이징, Google Search Console 발견된 오류 수정</p>
@@ -140,7 +140,7 @@
                 <p>메인 및 기사면 페이지 AMP에서 동작하도록 GNB, 관련된 기사 등 js 사용하는 영역 amp-script로 동작하도록 수정</p>
                 <p>
                   네이버 뉴스스탠드에 올라갈 수 있도록 기존 기사 컴포넌트에서 js 제거, 필요한 css만 추출하여 삽입
-                  <img src="img/sample_newsstand.png" alt="">
+                  <img class="img-70" src="img/sample_newsstand.png" alt="">
                 </p>
                 <p>오늘의 지면보기 등 기존 조선일보 서버와 연결이 필요한 기능 axios 활용하여 구현</p>
               </div>
@@ -179,6 +179,140 @@
                   <img src="img/sample_controlbar.png" alt="">
                 </p>
                 <p>메인 영역 주식 정보, 기사 및 이벤트 Carousel 작업</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="swiper-slide page-outline">
+        <article>
+          <div class="article-header">
+            <h2 class="article-subtitle"></h2>
+            <h1 class="article-title">02 인터렉티브 웹페이지 제작</h1>
+          </div>
+
+          <ul class="article-body outline-list">
+            <li>
+              <p>기간: </p>
+              <p>2019.01 ~ 2020.11</p>
+            </li>
+            <li>
+              <p>배경: </p>
+              <p>
+                조선일보 '아무튼, 주말' 팀에서 월 1회, 인터렉티브 특집 기사 제작을 기획<br>
+                2019년 1월 프리랜서로 참여, 이후 정식 입사를 제의받아 7월에 입사하여 유사업무 진행
+              </p>
+            </li>
+            <li>담당 업무: 반응형 인터렉티브 웹페이지 퍼블리싱</li>
+            <li>기여도: 100%</li>
+            <li>사용언어: HTML, CSS, JS</li>
+          </ul>
+        </article>
+      </section>
+      <section class="swiper-slide page-details">
+        <article>
+          <div class="article-header">
+            <h2 class="article-subtitle">02 인터렉티브 웹페이지 제작</h2>
+            <h1 class="article-title">상세 구현 내용</h1>
+          </div>
+
+          <div class="article-body flex">
+            <div class="left-wrap">
+              <h1 class="content-title">[조선비즈 창간 10주년 기획] 다시 쓰다 도시 3.0</h1>
+              <div class="content-panel">
+                <p>주요 요구사항</p>
+                <p>전체 디자인과 웹페이지를 먼저 준비하여 오픈하고 취재 후 기사가 나오면 상세 디자인을 구현하여 정해진 시간에 오픈</p>
+                <p>주요 요구사항: 특집 페이지를 하나의 html이 아닌 8개의 기사를 묶어서 보여주는 웹서비스처럼 느껴지도록 구현</p>
+                <br>
+                <p>구현 결과</p>
+                <p>상세페이지의 모든 구성요소를 json 형태로 설계하여 기사가 나오면 바로 저장할 수 있도록 계획</p>
+                <p>최적화를 위해 빈 페이지에 url 파라미터를 통해 key 값만 입력하면 내용을 삽입할 수 있도록 구현</p>
+                <p>조선비즈 창간 10주년 특집으로 메인 최상단에 게시되었으며, 특집 팀 모두 사내 3급표창 수상</p>
+              </div>
+            </div>
+            <div class="right-wrap">
+              <h1 class="content-title placeholder">[조선비즈 창간 10주년 기획] 다시 쓰다 도시 3.0</h1>
+              <div class="content-panel">
+                <p>
+                  결과: <a href="https://news.chosun.com/interactive/urban/index.html"
+                    target="_blank">https://news.chosun.com/interactive/urban/index.html</a>
+                  <img class="img-70" src="img/sample_urban1.png" alt="">
+                  <img class="img-70" src="img/sample_urban2.png" alt="">
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="swiper-slide page-details">
+        <article>
+          <div class="article-header">
+            <h2 class="article-subtitle">02 인터렉티브 웹페이지 제작</h2>
+            <h1 class="article-title">상세 구현 내용</h1>
+          </div>
+
+          <div class="article-body flex">
+            <div class="left-wrap">
+              <h1 class="content-title">피어나다 탄소섬유, 효성</h1>
+              <div class="content-panel">
+                <p>주요 요구사항</p>
+                <p>탄소섬유에 대한 설명 부분을 다양한 인터렉티브 요소로 강조하여 표시</p>
+                <p>PPT로 슬라이드쇼 하듯 구현하되 배경은 패럴렉스 스크롤처럼 유지</p>
+                <br>
+                <p>구현 결과</p>
+                <p>3페이지와 4페이지의 탄소섬유 설명 부분을 클릭 시 모달로 표시하여 인터렉션 요소 추가</p>
+                <p>특히 4페이지의 경우 가로 스크롤을 통해 전체를 보고나서 넘어갈 수 있도록 구현</p>
+                <p>2019년 조선비즈 브랜드 수상에 맞춰 대상을 수상한 효성에 대한 특집페이지 제공</p>
+              </div>
+            </div>
+            <div class="right-wrap">
+              <h1 class="content-title placeholder">피어나다 탄소섬유, 효성</h1>
+              <div class="content-panel">
+                <p>
+                  결과: <a href="https://news.chosun.com/interactive/hyosung/"
+                    target="_blank">https://news.chosun.com/interactive/hyosung/</a>
+                  <img class="img-70" src="img/sample_hyosung1.png" alt="">
+                  <img class="img-70" src="img/sample_hyosung2.png" alt="">
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="swiper-slide page-details">
+        <article>
+          <div class="article-header">
+            <h2 class="article-subtitle">02 인터렉티브 웹페이지 제작</h2>
+            <h1 class="article-title">상세 구현 내용</h1>
+          </div>
+
+          <div class="article-body flex">
+            <div class="left-wrap">
+              <h1 class="content-title">[아무튼, 주말] 알아보자 알쓸맛돈</h1>
+              <div class="content-panel">
+                <p>디자인 요소들 스크롤에 반응하여 인터렉션하도록 작업</p>
+                <p>품종 영역 강조하여 카드 플립, 전체모달 등 인터렉션 삽입</p>
+                <p>
+                  결과: <a href="http://news.chosun.com/interactive/pork/index.html"
+                    target="_blank">http://news.chosun.com/interactive/pork/index.html</a>
+                  <img src="img/sample_pig.png" alt="">
+                </p>
+              </div>
+            </div>
+            <div class="right-wrap">
+              <h1 class="content-title placeholder">관련 기사, 내가 100살까지 살 확률은?</h1>
+              <div class="content-panel">
+                <p>기사면 내부에 iframe 형식으로 테스트 페이지 삽입</p>
+                <p>사용자가 입력하면 csv 데이터를 통해 계산한 결과를 차트로 표시</p>
+                <p>
+                  결과: <a href="https://www.chosun.com/national/2020/10/13/OWSZ2YVDXBFV3MXZJKMPPY263U/"
+                    target="_blank">https://www.chosun.com/national/2020/10/13/OWSZ2YVDXBFV3MXZJKMPPY263U/</a>
+                </p>
+                <div class="flex">
+                  <img class="img-50" src="img/sample_age1.png" alt="">
+                  <img class="img-50" src="img/sample_age2.png" alt="">
+                </div>
               </div>
             </div>
           </div>

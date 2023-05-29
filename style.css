@@ -69,6 +69,10 @@ img {
   width: 100%;
 }
 
+.placeholder {
+  opacity: 0;
+}
+
 .container {
   width: 100%;
   max-width: 100rem;
@@ -264,4 +268,19 @@ header ul li {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   word-break: keep-all;
+}
+.page-details p a {
+  color: #004E4A;
+  text-decoration: underline;
+  word-break: break-all;
+}
+.page-details .img-70 {
+  display: block;
+  width: 70%;
+  margin: 0.5rem auto;
+}
+.page-details .img-50 {
+  display: inline-block;
+  width: 50%;
+  margin: 0.5rem auto;
 }
