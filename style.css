@@ -248,6 +248,7 @@ header ul li {
   height: 100%;
 }
 .page-details .content-title {
+  padding-left: 2rem;
   margin-bottom: 1.5rem;
   font-size: 1.25rem;
   font-weight: 500;
@@ -260,7 +261,7 @@ header ul li {
 }
 
 .page-details p {
-  margin-bottom: 0.25rem;
-  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
   word-break: keep-all;
 }

@@ -52,7 +52,7 @@
           </div>
 
           <ul class="article-body project-list">
-            <li>01 CMS 시스템 이전 지원, 웹 프론트엔드 개발</li>
+            <li>01 CMS 시스템 이전 지원(프론트엔드)</li>
             <li>02 인터렉티브 웹페이지 제작</li>
             <li>03 선거, 100주년 등 특집페이지 제작</li>
           </ul>
@@ -62,7 +62,7 @@
         <article>
           <div class="article-header">
             <h2 class="article-subtitle"></h2>
-            <h1 class="article-title">01 CMS 시스템 이전 지원, 웹 프론트엔드 개발</h1>
+            <h1 class="article-title">01 CMS 시스템 이전 지원(프론트엔드)</h1>
           </div>
 
           <ul class="article-body outline-list">
@@ -86,7 +86,72 @@
       <section class="swiper-slide page-details">
         <article>
           <div class="article-header">
-            <h2 class="article-subtitle">01 CMS 시스템 이전 지원, 웹 프론트엔드 개발</h2>
+            <h2 class="article-subtitle">01 CMS 시스템 이전 지원(프론트엔드)</h2>
+            <h1 class="article-title">배경 및 요구사항</h1>
+          </div>
+
+          <div class="article-body flex">
+            <div class="left-wrap">
+              <div class="content-panel">
+                <p>- 30여년 전 개발된 기존 CMS 시스템 노후화로 유지보수 및 신규기능 추가 어려움</p>
+                <p>- 기존의 자체 인프라와 서버에서 AWS & 워싱턴포스트 ARC 도입 결정</p>
+                <p>- 조선닷컴 디자인에 맞춰 기본 ARC 기능 커스터마이징, 신규기능 개발</p>
+                <p>- JIRA, Confluence, Slack 등 업무 방식 맞춰 워싱턴포스트 개발자들과 협업 진행</p>
+                <p>- 원활한 협업이 가능하도록 도서 및 강의로 사내 React 교육 진행(퍼블리싱 팀)</p>
+                <p>- 리액트 컴포넌트: 피쳐, 업무: 티켓 단위로 작업 진행, 위클리 스크럼으로 회고</p>
+                <p>- 티켓에 따라 브랜치로 작업, dev, prod 서버 분리하여 이중 dev 서버 관리</p>
+              </div>
+            </div>
+            <div class="right-wrap">
+              <div class="content-panel">
+                <p>
+                  ARC CMS 시스템(기사 작성을 위한 Composer) 예시
+                  <img src="img/sample_arc.png" alt="">
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="swiper-slide page-details">
+        <article>
+          <div class="article-header">
+            <h2 class="article-subtitle">01 CMS 시스템 이전 지원(프론트엔드)</h2>
+            <h1 class="article-title">주요 구현 내용</h1>
+          </div>
+
+          <div class="article-body flex">
+            <div class="left-wrap">
+              <h1 class="content-title">조선닷컴 리소스 최적화, 광고 컴포넌트 수정</h1>
+              <div class="content-panel">
+                <p>GIF 이슈로 index page 리스소 400~600MB, 업로드 용량 제한 후에도 80MB 수준으로 과다한 AWS 비용 문제 발생</p>
+                <p>Lazyload 도입 및 백엔드 개발자분과 SSR에서 index.html, script 최적화 작업 진행(기여도 40%)</p>
+                <p>이미지 업로드 시 동작하는 resizer 수정하여 최초 load 부하 감소, 사용하지 않는 비율 제거</p>
+                <p>html head 영역 meta 태그 커스터마이징, Google Search Console 발견된 오류 수정</p>
+                <p>-</p>
+                <p>iframe 및 외부 js 차단하는 ARC 정책에 따라 데이블, 타불라 등 일부 광고가 표시되지 않는 이슈 발생</p>
+                <p>google ads만 표시하던 기존 방식에서 PC, Mobile, 메인, 기사면에 따라 분기하여 다르게 표시하도록 작업</p>
+                <p>Google AMP에서 전용 js만 동작하는 이슈로 인해 표시되지 않던 광고 표시되도록 AMP 분기, js 별도 로드 작업</p>
+              </div>
+            </div>
+            <div class="right-wrap">
+              <h1 class="content-title">구글 AMP, 네이버 뉴스스탠드, 기존 조선닷컴 연동</h1>
+              <div class="content-panel">
+                <p>메인 및 기사면 페이지 AMP에서 동작하도록 GNB, 관련된 기사 등 js 사용하는 영역 amp-script로 동작하도록 수정</p>
+                <p>
+                  네이버 뉴스스탠드에 올라갈 수 있도록 기존 기사 컴포넌트에서 js 제거, 필요한 css만 추출하여 삽입
+                  <img src="img/sample_newsstand.png" alt="">
+                </p>
+                <p>오늘의 지면보기 등 기존 조선일보 서버와 연결이 필요한 기능 axios 활용하여 구현</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="swiper-slide page-details">
+        <article>
+          <div class="article-header">
+            <h2 class="article-subtitle">01 CMS 시스템 이전 지원(프론트엔드)</h2>
             <h1 class="article-title">상세 구현 내용</h1>
           </div>
 
@@ -105,16 +170,15 @@
               </div>
             </div>
             <div class="right-wrap">
-              <h1 class="content-title">네이버 뉴스스탠드, 구글 AMP, DB조선 연동</h1>
+              <h1 class="content-title">조선닷컴 프론트엔드 개발</h1>
               <div class="content-panel">
-                <p>PC, Mobile, Scroll에 따라 분기하여 GNB, LNB 컴포넌트 구현</p>
-                <p>Navbar에 검색 컴포넌트 삽입, 검색창, 검색옵션, 검색결과 컴포넌트 구현</p>
-                <p>Navbar에 Auth 상태에 따라 다르게 표시, Auth 화면 구현(마이페이지 등 총 기여도 40%)</p>
+                <p>메인 영역, 주제 영역 등 페이지 전체 디자인 커스터마이징 반영</p>
+                <p>기사 TTS Poly 컴포넌트 구현 및 인터렉션 시 서버 요청하여 소요 최소화</p>
                 <p>
-                  Mobile팀이 구현 중인 WebView에서 Auth 확인할 수 있도록 User object 정보 지원
-                  <img src="img/img_gnb.jpg" alt="">
+                  기사면 control bar 작업, 사이트 전체 노티피케이션 개발 및 공유
+                  <img src="img/sample_controlbar.png" alt="">
                 </p>
-                <p>관계사의 최신기사를 보여주는 콘텐츠 판 기능 LNB와 Index Page 최하단에 구현</p>
+                <p>메인 영역 주식 정보, 기사 및 이벤트 Carousel 작업</p>
               </div>
             </div>
           </div>
