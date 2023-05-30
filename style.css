@@ -262,6 +262,12 @@ header ul li {
   font-size: 1rem;
   word-break: keep-all;
 }
+.page-details span {
+  display: block;
+  font-size: 0.875rem;
+  color: #666;
+  text-align: center;
+}
 .page-details p a {
   color: #004E4A;
   text-decoration: underline;
